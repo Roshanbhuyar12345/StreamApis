@@ -3,26 +3,27 @@ package com.arrays;
 public class FibonacciSeries {
 
 	// using recurtion
+	static int a = 0;
+	static int b = 1;
+	static int c = 0;
 
 	public static void FabonacciUsingRecursion(int n) {
 
-		int a = 0;
-		int b = 1;
-		int c = 0;
-
-		for (int i = 1; i <= n; i++) {
+		if (n > 0) {
 			c = a + b;
 			System.out.println(c);
 			a = b;
 			b = c;
 
+			FabonacciUsingRecursion(n - 1);
 		}
 
 	}
 
 	public static void main(String[] args) {
-		System.out.println();
-		FabonacciUsingRecursion(10);
+
+		int n = 10;
+		FabonacciUsingRecursion(n);
 	}
 
 }

@@ -26,7 +26,7 @@ public class ReverseNumer {
 		for (int i = 0; i < arr.length; i++) {
 			if (uniqueArray[i] != -1) {
 				uniqueArray[i] = arr[i];
-				System.out.print(uniqueArray[i] + " ");
+				System.out.print(" " + uniqueArray[i] + " ");
 			}
 		}
 		List<Integer> collect = list.stream().sorted(Comparator.reverseOrder()).collect(Collectors.toList());

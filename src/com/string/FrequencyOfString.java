@@ -3,7 +3,7 @@ package com.string;
 public class FrequencyOfString {
 	public static void main(String[] args) {
 
-		String str = "geeksforgeeks";
+		String str = "Geeksforgeeks";
 		int a[] = new int[str.length()];
 		int count = 0;
 		for (int i = 0; i < str.length(); i++) {
